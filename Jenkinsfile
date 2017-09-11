@@ -1,8 +1,15 @@
 node {
        stage 'Check out'
     
-       echo 'Checking out...'
+          echo 'Checking out...'
     
-       checkout scm
-    
+          checkout scm
+  
+       stage 'Build dll'
+        
+          echo 'Building dll file...'
+        
+          powershell '''dotnet restore
+                        dontet build'''
+           
 }
