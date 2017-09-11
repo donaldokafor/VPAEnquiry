@@ -10,6 +10,6 @@ node {
           echo 'Building dll file...'
         
           powershell '''dotnet restore
-                        dontet build'''
+                        dotnet build'''
            
 }
